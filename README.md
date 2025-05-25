@@ -29,27 +29,28 @@ By default, when you launch app.py, the inference mode is active. It can also be
 - **Support for a wide range of ASL characters and phrases.**
 - **High accuracy and robustness in varying lighting conditions.**
 
-# Requirements:
+ 
+ # requirements.txt 
 
-- OpenCV
-- MediaPipe
-- Pillow
-- NumPy
-- Pandas
-- Seaborn
-- Scikit-learn
-- Matplotlib
-- Tensorflow
 
-> [!IMPORTANT]
-> If you face an error during training from the line converting to the tflite model, use TensorFlow v2.16.1.
+Package	Used For
+mediapipe	Detecting 21 hand landmarks in real time
+opencv-python	Capturing video from webcam and displaying the detection window
+tensorflow	Building and training the MLP model to classify ASL signs
+numpy	Numerical operations, e.g., feature vector manipulation
+pandas	Handling CSV dataset (landmarks and labels)
+sklearn	Label encoding, train-test splitting, evaluation
+pyttsx3	Text-to-speech for audio output (in GUI app)
+tkinter	GUI interface for the ASL detection application
+matplotlib	Visualizing model performance or data (in the notebook)
+
 
 # Installation:
 
 1. Clone the Repository:
 
 ```
-git clone https://github.com/AkramOM606/American-Sign-Language-Detection.git
+git clone https://github.com/aman420xd/American-Sign-Language-Detection.git
 cd American-Sign-Language-Detection
 ```
 
