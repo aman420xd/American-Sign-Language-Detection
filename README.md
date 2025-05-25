@@ -1,6 +1,6 @@
 # Overview
 
-This ASL Detector is a cutting-edge AI-powered application that uses computer vision and deep learning to recognize and classify American Sign Language (ASL) characters in real-time. This application utilizes the device's camera to capture hand landmarks and coordinates, which are then processed by a deep learning model to identify the corresponding ASL character.
+This ASL Detector is a cutting-edge AI-powered application that uses computer vision and deep learning to recognize and classify American Sign Language (ASL) characters in real-time. This application utilizes the device's camera to capture hand landmarks and coordinates, which are then processed by a deep learning model  ( MLP )to identify the corresponding ASL character.
 
 <p align="center">
    <img src="https://github.com/AkramOM606/American-Sign-Language-Detection/assets/162604610/6945d009-8aa7-4bf7-99f8-9743662c5248" width="50%">
@@ -19,8 +19,7 @@ By default, when you launch app.py, the inference mode is active. It can also be
 2. [Requirements](#Requirements)
 3. [Installation](#Installation)
 4. [Model Training](#Model-Training)
-5. [Contributing](#Contributing)
-6. [License](#License)
+
 
 # Features
 
@@ -65,5 +64,9 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
+Model Training 
+The model is trained in the Jupyter notebook:
+📄 keypoint_classification.ipynb
 
+It uses MediaPipe to extract 21 hand landmarks (each having x, y, z coordinates), and then uses a Multi-Layer Perceptron (MLP) model (built with TensorFlow/Keras) to classify the hand pose into ASL characters.
 
